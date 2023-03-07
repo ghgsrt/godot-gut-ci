@@ -5,11 +5,11 @@ GODOT_VERSION=$1
 GUT_PARAMS=$2
 
 # # Download Godot
-wget https://downloads.tuxfamily.org/godotengine/${GODOT_VERSION}/Godot_v${GODOT_VERSION}-stable_linux_headless.64.zip
+wget https://downloads.tuxfamily.org/godotengine/4.0/rc6/mono/Godot_v4.0-rc6_mono_linux_x86_64.zip
 
 # Unzip it
-unzip Godot_v${GODOT_VERSION}-stable_linux_headless.64.zip
-mv Godot_v${GODOT_VERSION}-stable_linux_headless.64 /usr/local/bin/godot
+unzip Godot_v4.0-rc6_mono_linux_x86_64.zip
+mv Godot_v4.0-rc6_mono_linux_x86_64 /usr/local/bin/godot
 
 #
 # Launch the tests
