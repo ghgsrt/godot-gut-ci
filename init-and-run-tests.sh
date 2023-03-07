@@ -25,7 +25,8 @@ echo Running GUT tests using params:
 echo "  -> $GUT_PARAMS"
 
 TEMP_FILE=/tmp/gut.log
-/usr/local/bin/godot -d -s --path $PWD addons/gut/gut_cmdln.gd -gexit $GUT_PARAMS 2>&1 | tee $TEMP_FILE
+# /usr/local/bin/godot -d -s --path $PWD addons/gut/gut_cmdln.gd -gexit $GUT_PARAMS 2>&1 | tee $TEMP_FILE
+$PWD/addons/gut/gut_cmdln.gd -gexit $GUT_PARAMS 2>&1 | tee $TEMP_FILE
 
 cat $TEMP_FILE
 
